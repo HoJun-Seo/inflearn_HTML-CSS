@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li.menu{ /*tag, id, class 혼합 사용의 예, 여기서는 id 는 사용하지 않았다.*/
+            color: #350a5b;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        input{
+            color: green;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        input[type=text]{ /*tag 의 속성을 선택하여 css 의 속성을 설정한다.*/
+            color: orange;
+            font-size: 50px;
+            width: 200px;
+        }
+        input[type=tel]{
+            color: red;
+        }
+        #header, #wrap, #footer{
+            border: 1px solid #cccccc;
+            width: 500px;
+        }
+        div li{/*li 태그가 어느정도의 깊이에 있든, 몇개가 존재하든 li태그를 모두 선택한다. - 후손 선택자*/
+            background-color: red;
+        }
+        div p{
+            font-size: 25px;
+        }
+        div > h1{/*div 태그의 바로 밑에 있는 h1 태그를 선택하여 속성을 설정한다. - 자손 선택자*/
+            font-weight: bold;
+            color: yellow;
+        }
+        h3~div{ /*h3 밑에 있는 div 태그를 전부 선택한다.*/
+            font-size: 10px;
+            color: orange;
+        }
+        h3+div{/*h3 태그 바로 밑에 있는 div 태그를 선택한다.*/
+            font-size: 20px;
+            font-weight: bold;
+            color: blue;
+        }
+        #title~div{/*id 값 title 밑에 있는 div 태그를 모두 선택한다.*/
+            width: 300px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li class="menu">menu1</li>
+            <li>menu2</li>
+            <li class="menu">menu3</li>
+            <li>menu4</li>
+            <li class="menu">menu5</li>
+        </ul>
+        <ol>
+            <li class="menu">menu1</li> <!--ol 태그에 속해있는 class 가 아니므로 css 설정이 적용되지 않는다.-->
+            <li>menu2</li>
+            <li class="menu">menu3</li>
+            <li>menu4</li>
+            <li class="menu">menu5</li>
+        </ol>
+    </div>
+    <form>
+        이름 : <input type="text" /><br />
+        아이디 : <input type="text" /><br />
+        비밀번호 : <input type="password" /><br />
+        전화번호 : <input type="tel" /><br />
+    </form>
+    <div id="header">
+        <div class="logo">
+            <h1>LOGO</h1>
+        </div>
+        <div class="copy">
+            <h2>global company</h2>
+        </div>
+    </div>
+
+    <div id="wrap">
+        <p>html, css 실습 파일입니다.</p>
+        <ul>
+            <li><p>html, css 실습 파일입니다.1</p></li>
+            <li><h1>html, css 실습 파일입니다.2</h1></li>
+            <li><p>html, css 실습 파일입니다.3</p></li>
+            <li><h1>html, css 실습 파일입니다.4</h1></li>
+            <li><p>html, css 실습 파일입니다.5</p></li>
+            <li><h1>html, css 실습 파일입니다.6</h1></li>
+            <li><p>html, css 실습 파일입니다.7</p></li>
+        </ul>
+    </div>
+    <h3 id="title">동위 선택자(+, ~) </h3>
+    <div>div_01</div>
+    <div>div_02</div>
+    <div>div_03</div>
+    <div>div_04</div>
+    <div>div_05</div> 
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap{
+            width: 500px;
+            background-color: darkgreen;
+            border: 2px solid #808080;
+            text-align: center;
+            overflow: hidden;
+            font-size: 1em;/*em : 글자의 기본 크기 단위, 2em 은 기본 글자 크기에서 2배*/
+        }
+        #content{
+            width: 350px;
+            border: 1px solid red;
+            float: left; /*정렬에 관한것, 컨텐츠를 왼쪽으로 붙이겠다, 컨텐츠 다음에 나오는 것도 마찬가지*/
+        }
+        #side_banner{
+            border: 1px solid red;
+            float: left;/*왼쪽 정렬로 인해 공간이 남아있을 때는 개행이 아니라 이전에 출력되었던 블록의 왼쪽으로 붙어서 나오게 된다.*/
+        }
+        #footer{
+            clear: both;/*float 속성의 특징과 무관하게 개행으로 출력하기 위해 사용*/
+            width: 500px;
+            background-color: #ffd800;
+            border: 3px solid #808080;
+            text-align: center;
+        }
+        .menu1{
+            color: #1822e2;
+            font-weight: bold;
+        }
+        .menu1, .menu3, .menu5{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="content">
+            <h1>CONTENT</h1>
+            <ul>
+                <li class="menu1">menu1</li>
+                <li class="menu2">menu2</li>
+                <li class="menu3">menu3</li>
+                <li class="menu4">menu4</li>
+                <li class="menu5">menu5</li>
+            </ul>
+        </div>
+        <div id="side_banner">
+            <h1>BANNER</h1>
+            <a href="https://github.com/HoJun-Seo" target="_blank">Github</a>
+        </div>
+    </div>
+
+    <div id="footer">
+        <h1>FOOTER</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{/*div 태그 선택*/
+            background-color :rgb(255, 81, 0); border: 5px solid #ffd800; /*배경색, 테두리 속성 변경*/
+        }
+        li, h1{/*tag 선택자 : li 태그를 선택했다, 태그 여러개 동시 선택 가능*/
+            color: blueviolet;
+        }
+        li{
+            font-weight: bold; /*li 태그의 글자 굵기 변경*/
+        }
+        *{
+            background-color: tomato;
+            margin: 0; padding: 0; /*margin : 0 padding : 0 웹 페이지의 좌표에 딱 달라붙는 디자인을 만들수 있다.*/
+        }/*모두 선택하여 속성을 변경한 이후 다른 태그의 속성을 따로 변경하고 싶다면 이후에 따로 선택자를 지정하여 css 언어로 코드를 작성하면 된다. */
+        li{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>제목 입니다.</h1>
+    <p>본문 입니다.</p>
+
+    <div>
+        <h1>제목 입니다.</h1>
+        <p>본문 입니다.</p>
+    </div>
+
+    <div> <!--div 태그가 몇개가 있든 동일하게 css 가 적용된다.-->
+        또 하나의 div 입니다.
+    </div>
+    <div>
+        <ul>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+            <li>menu5</li>
+        </ul>
+    </div>
+</body>
+</html>
