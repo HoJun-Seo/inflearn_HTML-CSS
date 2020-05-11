@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            background-color: red;
+            margin: 30px;/*상하좌우 모두 30px 씩 여백을 준다.*/
+            /*margin : 0 0 0 0  첫번째 : 위쪽, 두번째 : 오른쪽, 세번째 : 아래쪽, 네번째 : 왼쪽*/
+            /*위와 같이 각 부분 별로 값을 따로따로 줄 수도 있다.*/
+            /*margin : 0 auto - 두개의 값만 줄 경우, 0 : 첫번째, 세번째 경우에 해당, auto : 두번째, 네번째 경우에 해당 */
+            /*auto : auto 가 맡은 부분에 해당하는 영역에 동등한 비율로 공백을 준다(두번째 요소로 줄 경우 가운데 정렬).*/
+        }
+        ul > li{
+            font-size: 20px;
+            font-weight: bold;
+            color: orange;
+        }
+        li:hover{/*반응 선택자 - 마우스의 반응에 따른 속성 변경 - 해당 태그에 마우스를 갖다 대면 속성이 변경된다.*/
+            color: blue;
+        }
+        input:focus{/*input 태그에 글을 입력할 때 focus가 맞춰진다고 한다.*/
+            border: 2px solid #ff0000;
+            padding: 10px; /*커서가 입력창 끝에서 10px 정도 떨어져 있는채로 시작한다?*/
+        }
+        input:enabled{/*사용할 수 있는 input 태그의 경우*/
+            color: #00ff00;
+            font-weight: bold;
+        }
+        input:disabled{/*사용할 수 없는 input 태그의 경우*/
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+            <li>menu5</li>
+        </ul>
+    </div>
+    <div>
+        <form>
+            이름 : <input type="text" name="uname"/><br />
+            아이디 : <input type="text" name="uid"/><br />
+            비밀번호 : <input type="password" name="upw" value="12345" disabled="disabled"/><br />
+        </form>
+    </div>
+</body>
+</html>

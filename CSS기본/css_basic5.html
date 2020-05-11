@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content{
+            width: 300px;
+        }
+        ul li{
+            list-style: none;/*리스트 앞의 구분자를 지운다.*/
+            border: 1px solid #cccccc;
+            padding: 10px;
+            background-color: #efefef;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        ul li a{/*하이퍼 링크의 색상을 검정색으로 변환*/
+            color: #000000;
+        }
+        ul li:nth-child(2n+1){/*구조 선택자를 사용할 때 쓰는 함수 - 홀수 번째인 리스트의 배경색을 변경한다.*/
+            background-color: #de9393;
+        }
+        ul li:first-child, ul li:last-child{/*첫번째 리스트와 마지막 리스트 요소의 배경색을 변경한다.*/
+            background-color: yellow;
+        }
+        ul li:first-child{/*좌 상단, 우 상단의 모서리를 둥글게 만든다.*/
+        /*first-child 대신 first-of-type 을 사용해도 무방하다.*/
+            border-radius: 10px 10px 0 0;
+        }
+        ul li:last-child{ /*좌 하단, 우 하단의 모서리를 둥글게 만든다.*/
+        /*last-child 대신 last-of-type 을 사용해도 무방하다.*/
+            border-radius: 0 0 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <ul>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu2</a></li>
+            <li><a href="#">menu3</a></li>
+            <li><a href="#">menu4</a></li>
+            <li><a href="#">menu5</a></li>
+            <li><a href="#">menu6</a></li>
+            <li><a href="#">menu7</a></li>
+            <li><a href="#">menu8</a></li>
+        </ul>
+    </div>
+</body>
+</html>
