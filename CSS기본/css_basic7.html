@@ -12,6 +12,19 @@
         #header{
             border-bottom: 1px solid #cccccc;
         }
+        #content p:first-child::selection{/*문자 선택자 - 드래그 시 속성 변경*/
+            background-color: blue;
+            color: yellow;
+        }
+        #content a{
+            text-decoration: none;
+        }
+        #content a::after{/*링크 선택자 사용*/
+            content: ' - ' attr(href);
+        }
+        #content li:not(.fa){/*부정 선택자 사용 - li 태그 중에서 클래스가 fa 가 아닌 태그를 선택한다.*/
+            background-color: #ffd800;
+        }
         #history2:first-letter, #history1:first-letter{ /*문자 선택자 사용*/
             font-size: 2em;
         }
@@ -37,6 +50,12 @@
         <div id="content">
             <p>
                 css 문자 선택자 테스트 웹 문서
+            </p>
+            <p>
+                <ul>
+                    <li><a href="https://github.com/HoJun-Seo" target="_blank">서호준 깃허브</a></li>
+                    <li class="fa"><a href="https://github.com/HoJun-Seo" target="_blank">서호준 깃허브</a></li>
+                </ul>
             </p>
             <p id = "history2">
                 css 문자 선택자 테스트 웹 문서
