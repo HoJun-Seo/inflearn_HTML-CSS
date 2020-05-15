@@ -1,0 +1,97 @@
+CSS 속성1
+- CSS3 단위
+- url()
+- display 속성
+- visibility 속성
+- opacity 속성
+
+정확하게 html 문서에 있는 태그와 속성을 선택할 수 있어서 선택되어진 태그와 속성의 설정을 변경할 수 있다. - 그래서 선택자가 중요함
+
+CSS3 단위
+- CSS3에서 자주 사용되는 단위
+
+첫번째 예시
+#content2 p:nth-child(1){
+    font-size:1.6em;
+}
+#content2 p span{
+    display:block;
+    color:#087eff;
+    font-weight:normal;
+    font-size:16px;
+}
+
+css 단위 : px, %, em
+px : 1 픽셀 단위
+% : 100% 가 기본이며, 이보다 작으면 축소, 이보다 크면 확대
+em : 1.0em : 기본 default 크기 값(기본적으로 가지고 있는 폰트 사이즈)
+- css_property1.html 파일 참조
+
+url()
+Background-img 속성의 속성값으로 많이 사용된다. 이 경우 배경이미지의 경로를 나타낸다.
+
+예시:
+#content{
+    width:80%;
+    height:100%;
+    margin:0 auto;
+    background-image:url('https://github.com/HoJun-Seo/inflearn_HTML-CSS/blob/master/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%B2%9C%EA%B5%AC%EC%9D%98%20%EA%B2%B0%ED%95%A9.png?raw=true');
+    font-size:2em;
+    color:#ffffff;
+    font-weight:bold;
+    text-align:center;
+} - css_property2.html 파일 참조
+
+display 속성
+- 화면에 어떻게 보이는지를 설정하는 속성이다. 다양한 속성값이 있지만, 주로 몇 가지만 많이 사용된다.
+- display 속성의 아래 속성값은 매우 중요하다.
+1. block
+2. inline
+3. inline-block
+
+1. block 속성 : 대표적인 태그 - div, p, li(자동으로 개행이 이루어져서 블록 처럼 쌓여져 나간다.)
+2. inline 속성 : 별도의 개행을 넣어주지 않으면 개행 없이 계속해서 옆으로 붙여져 나감 - span
+3. inline-block : 블록이 가지고 있는 속성을 가지고 옆으로 붙여 나감
+
+block 같은 경우 높이 값이 있으나, inline 같은 경우 높이 값이 존재하지 않는다.
+inline-block 의 경우 block, inline 의 특징을 모두 가지고 있다. - 옆으로 정렬이 되기도 하지만, 블록의 높이의 속성 또한 가지고 있음
+- css_property3.html 파일 참조
+
+
+visibility 속성
+- display 속성의 none 속성값과 비교하여 이해해야 한다 : 화면에 보여줄 것인가, 보여주지 않을 것인가?
+display:none;
+visibility:hidden; - display:none 과 달리 가지고 있던 공간은 유지 된다. 작성한 태그만 보이지 않을 뿐 해당 태그의 자리는 유지된다.
+- css_property4.html 파일 참조
+
+
+opacity 속성
+- 투명도를 조절하는 속성이다. 여러곳에 유용하게 사용된다.
+
+예시
+<head>
+    <style>
+        ul li{
+            display:inline-block;
+            width:200px; height:100px;
+            text-align:center;
+            background-color:#dddddd;
+        }
+        ul li:nth-child(2){
+            background-color:#dddddd;
+            opacity:0.7;
+        }
+        ul li:nth-child(3){
+            background-color:#dddddd;
+            opacity:0.4;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>우리나라 만세!!</li>
+        <li>우리나라 만세!!</li>
+        <li>KOREA FIGHTING!!</li>
+    </ul>
+</body>
+- css_property5.html 파일 참조
