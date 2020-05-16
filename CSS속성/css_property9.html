@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div:nth-child(1){
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #ff6a00;
+            background-color: #000000;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        div:nth-child(2){
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            border-width: 10px;
+            border-style: dashed;/*테두리 점선 표시*/
+            border-color: #00ff21;
+            background-color: #000000;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        div:nth-child(3){
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            border: 15px solid #c20b75;/*1,2에서 준 border 값을 한번에 줄 수 있다.*/
+            /*border-width: 5px;
+            border-style: solid;
+            border-color: #ff6a00;*/
+            border-radius: 10px 10px 0 0;
+            background-color: #000000;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        div:first-child{
+            width: 80%;
+            margin: 0 auto;
+            height: 400px;
+            background-image: url('https://github.com/HoJun-Seo/inflearn_HTML-CSS/blob/master/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%B2%9C%EA%B5%AC%EC%9D%98%20%EA%B2%B0%ED%95%A9.png?raw=true');
+            background-size: 100%;/*배경 이미지 크기의 기본값*/
+        }
+        div:last-child{
+            width: 80%;
+            margin: 0 auto;
+            height: 400px;
+            background-image: url('https://github.com/HoJun-Seo/inflearn_HTML-CSS/blob/master/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%B2%9C%EA%B5%AC%EC%9D%98%20%EA%B2%B0%ED%95%A9.png?raw=true');
+            background-size: 50%;
+            /*여기서 background-repeat : no-repeat 속성을 주게 되면 위에서 처럼 크기에 맞게 여러개의 배경이미지가 출력되는 것이 아니라, 위에서 지정된 크기로 딱 한번만 배경이미지를 출력한다.*/
+            /*background-attachment: - 배경 이미지의 스크롤 여부를 정하는 속성이다. - 해당 속성을 사용할 경우 margin 으로 남겨놓은 공백 이후 이미지가 시작되는 것이 아니라 
+            웹 페이지의 좌측 끝 상단에서 부터 시작된다.(margin 속성으로 인해 해당 공간은 표시되지 않지만 그림은 있는것으로 간주되어 화면에 출력된다.)
+            기본값 : scroll - 선택한 요소와 같이 움직인다. 내용을 스크롤하면 배경 이미지는 스크롤 되지 않는다.
+                    fixed - 움직이지 않는다. 
+                    local - 선택한 요소와 같이 움직인다. 내용을 스크롤하면 배경 이미지도 함께 스크롤된다.
+                    initial - 기본값으로 설정한다.
+                    inherit - 부모 요소의 속성값을 상속받는다.
+            */
+        }
+    </style>
+</head>
+<body>
+    <div>content1</div>
+    <div>content2</div>
+    <div>content3</div>
+</body>
+</html>

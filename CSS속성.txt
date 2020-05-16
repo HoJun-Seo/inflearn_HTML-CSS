@@ -95,3 +95,29 @@ opacity 속성
     </ul>
 </body>
 - css_property5.html 파일 참조
+
+
+
+
+CSS 속성2(정말 중요한 내용)
+margin 및 padding 속성
+box-sizing 속성
+border 속성 - 해당 속성을 특징 태그에 주었을 때 끼치는 영향
+background-image 속성
+
+- margin 및 padding 속성
+: 아주 중요한 속성이므로 정확한 속성의 의미를 알아야 한다, 무한 반복을 통해 완전히 습득할것
+margin 은 바깥쪽 공백
+padding 원래 사이즈보다 주어진 크기만큼 background 확장
+- css_property6.html, css_property7.html 파일 참조
+
+- box-sizing 속성
+: 전체 사이즈의 크기를 변경할 수 있다. 
+- css_property8.html 파일 참조
+
+
+- border 속성
+- css_property9.html 파일 참조
+
+background-image 속성 - 배경을 지정하는 속성
+- css_property9.html 파일 참조

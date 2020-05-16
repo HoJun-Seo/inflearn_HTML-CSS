@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: #3e3e3e;
+        }
+        #content{
+            width: 810px;
+            margin: 0 auto;
+            background-color: #cccccc;
+            overflow: hidden;/*아래쪽의 float: left 속성이 다른 태그에 까지 적용되는 것을 막기 위해 overflow: hiddent 속성 사용*/
+        }
+        #content div{
+            width: 250px;
+            float: left;/*위의 overflow : hidden 속성으로 인해 지정한 해당 태그에만 left 속성이 적용된다.*/
+            background-color: #ffffff;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        ul li{
+            list-style: none;
+        }
+        p{
+            padding: 0 20px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div>
+            <p>공지사항</p>
+            <ul>
+                <li>게시물_01</li>
+                <li>게시물_02</li>
+                <li>게시물_03</li>
+                <li>게시물_04</li>
+                <li>게시물_05</li>
+            </ul>
+        </div>
+        <div>
+            <p>공지사항</p>
+            <ul>
+                <li>게시물_01</li>
+                <li>게시물_02</li>
+                <li>게시물_03</li>
+                <li>게시물_04</li>
+                <li>게시물_05</li>
+            </ul>
+        </div>
+        <div>
+            <p>공지사항</p>
+            <ul>
+                <li>게시물_01</li>
+                <li>게시물_02</li>
+                <li>게시물_03</li>
+                <li>게시물_04</li>
+                <li>게시물_05</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
