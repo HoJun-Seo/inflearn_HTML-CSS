@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #contain{
+            width: 800px;
+            margin: 0 auto;
+            border: 1px solid #cccccc;
+        }
+        #header{
+            height: 50px;
+            background-color: #cccccc;
+        }
+        #wrap{
+            height: 200px;
+            position: relative; /*relative 값을 주지 않으면 웹 브라우저를 기준으로 위치가 잡히기 때문애 header 출력과 위치가 겹치게 된다.*/
+        }
+        #content1{
+            width: 100px; height: 100px;
+            background-color: red;
+            border: 2px dashed green;
+            position: absolute;
+            top: 10px; left: 10px;
+            z-index: 20;/*깊이값 조정 - 숫자가 높을수록 상단에 놓이게 된다.*/
+        }
+        #content2{
+            width: 100px; height: 100px;
+            background-color: yellow;
+            border: 2px dashed green;
+            position: absolute;
+            top: 50px; left: 50px;
+            z-index: 10;
+        }
+        #footer{
+            height: 50px;
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="contain">
+        <div id="header">HEADER</div>
+        <div id="wrap">
+            <div id="content1"></div>
+            <div id="content2"></div>
+        </div>
+        <div id="footer">FOOTER</div>
+    </div>
+</body>
+</html>

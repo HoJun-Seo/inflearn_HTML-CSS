@@ -121,3 +121,50 @@ padding 원래 사이즈보다 주어진 크기만큼 background 확장
 
 background-image 속성 - 배경을 지정하는 속성
 - css_property9.html 파일 참조
+
+
+
+
+CSS 속성3 - 글자와 관련된 속성들
+font-family, font-size 속성(font 글꼴 및 크기)
+font-style, font-weight, line-weight 속성
+text-align, text-decoration 속성
+position 속성
+
+font-family, font-size 속성
+: 사용자 컴퓨터에 해당하는 글꼴이 없을 경우 default로 사용되는 글꼴이 선택될 수 있다.
+- css_property10.html 참조
+div:nth-child(1){
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} - 글꼴을 여러개 지정해 놓은 이유 : 기본적으로는 첫번째 글꼴을 사용하되, 웹 페이지를 여는 다른 컴퓨터에 해당 글꼴이 존재하지 않을 경우 다음 번째 글꼴을 선택하여 출력하기 위함
+    나열해 놓은 글꼴들이 모두 없을 경우 default 글꼴을 사용한다.
+
+font-style, font-weight, line-height 속성
+font-style : 글꼴, font-weight : 굵기, line-height : 행 간 간격
+- css_property11.html, css_property12.html 파일 참조
+
+text-align, text-decoration 속성
+- text-align : 글자 위치 조정, text-decoration : 하이퍼 링크에서 ___ 을 빼느냐 빼지 않느냐 여부로 사용가능
+- css_property13.html 파일 참조
+
+position 속성
+position 속성 중 absolute 속성값에 대해 살펴본다.
+position : absolute - absolute 는 절대값이라는 뜻(절대적인 위치 지정 - 기준점이 어딘지에 따라 위치가 달라질 수 있다.)
+position:absolute;
+top:50px; - 절대값으로 지정한 위치에서 이동시킨다.
+left:50px; - 절대값으로 지정한 위치에서 이동시킨다.
+- css_property14.html 파일 참조
+
+position 속성 중 fixed 속성값
+위치를 딱 고정시키는 속성
+- css_property15.html 파일 참조 
+
+position 속성 중 static 속성값
+position 속성값을 따로 주지 않으면 default 값으로 지정된다.
+- css_property16.html 파일 참조
+
+position 속성 중 relative 속성값
+- css_property17.html 파일 참조
+
+position 속성 중 absolute, relative 혼합 활용
+- css_property18.html 파일 참조
