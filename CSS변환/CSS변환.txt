@@ -1,0 +1,9 @@
+과거 자바스크립트에서만 구현이 가능했던 변환(transform) 기능을 이제는 CSS3 에서도 구현이 가능하다.
+그러나 특별한 경우가 아니면 잘 쓰일 일이 없다.
+각종 CSS3 변환함수
+translate(x,y) - 이동
+translateX - x 이동
+translate - y 이동
+scale(x,y) - x,y 같이 크기 조정
+......
+
