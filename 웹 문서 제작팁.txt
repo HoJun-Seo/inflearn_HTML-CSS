@@ -1,0 +1,36 @@
+편집 툴
+- visual studio express for web
+- visual studio code
+- notepad++
+- editplus(유료)
+- dreamweaver(유료)
+
+하위 버전 브라우저 테스트 툴
+download : http://www.my-debugbar.com/wiki/IEester/HomePage
+
+많은 양의 더미 텍스트가 필요한 경우
+http://lipsum.com
+
+단위 변환(px, em, %, point)
+http://pxtoem.com/
+
+전체적인 레이아웃을 제작할 때 필요한 가상의 이미지
+http://placehold.it/(ex : http://placehold.it/200x100)
+
+W3C (월드 와이드 웹 컨소시엄, 활동사항, 기술 동향등의 정보 제공)
+http://www.w3.org/
+
+다양한 디바이스 환경에 어울리는 미디어쿼리
+http://mediaqueri.es/
+
+웹 접근성 관련
+- 웹 접근성과 관련하여 권고되는 사항들의 자료 제공
+http://www.wah.or.kr/
+
+w3schools
+- www.w3schools.com
+- html 정보 사이트로, html, xml, 브라우저, 서버 스크립트에 대한 정보를 제공
+- 다양한 튜토리얼 문서를 경험 할 수 있음
+
+색상 정보 제공
+- www.colorpicker.com
